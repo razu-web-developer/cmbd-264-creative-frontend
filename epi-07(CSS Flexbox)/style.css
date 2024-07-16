@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* background-color: #ffffff; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header section stated */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.navbar .h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #383838;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navbar button {
+    background-color: #383838;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.banner {
+    text-align: center;
+    padding: 150px 0;
+}
+
+.banner img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.banner h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.banner h1 span {
+    color: #878CFF;
+}
+
+.banner p {
+    font-size: 20px;
+    width: 400;
+    color: #777777;
+}
+
+.banner button {
+    background-color: #878CFF;
+    border: none;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 5PX;
+    font-size: 16px;
+}
+
+.banner p {
+    margin: 30px 0;
+}
+
+/* header section end */
+
+/* meet section stated */
+.meet_section {
+    background-color: #878CFF1C;
+    padding: 40px;
+}
+
+.myself {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meetLeftsite img {
+    height: 350px;
+    border-radius: 20px;
+}
+
+.meetRightsite {
+    width: 50%;
+}
+
+.meetRightsite h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.meetRightsite p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #535353;
+    margin: 25px 0;
+}
+
+.meetRightsite button {
+    background-color: #878CFF;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* meet section end */
+
+/* my work section stated */
+
+.work_section {
+    padding-bottom: 40px;
+}
+
+.mywork {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.myworkBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+
+.box_h2_styel {
+    height: 300px;
+    width: 400px;
+}
+
+.box_p_styel {
+    font-size: 18px;
+    font-weight: 300;
+    color: #21243D;
+    margin: 20px 0;
+    height: 60px;
+}
+
+.box_a_styel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #878CFF;
+    border-bottom: 2px solid #878CFF;
+}
+
+/* my work section end */
+
+/* insights section stated */
+.insights_section {
+    padding: 40px 0;
+}
+
+.insights {
+    font-size: 40px;
+    font-weight: 700;
+    color: #878CFF;
+    margin-bottom: 30px;
+}
+
+.insights_card {
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    border: 1px solid #E2E2E2;
+    padding: 20px;
+}
+
+.card_h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #777777;
+}
+
+.card_h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #21243D;
+    margin: 12px 0 27px 0;
+}
+
+.card_p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F6F6F;
+    margin-bottom: 24px;
+}
+
+.card_a {
+    font-size: 16;
+    font-weight: 500;
+    color: #878CFF;
+    border-bottom: 2px solid #878CFF;
+    margin-bottom: 10px;
+}
+
+/* insights section end */
+
+footer {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontawesomeIcon {
+    font-size: 25px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 25px;
+}

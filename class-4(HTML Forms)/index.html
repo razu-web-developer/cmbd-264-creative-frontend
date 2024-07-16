@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="margin-left: 200px;">
+
+        <h2>Parsonal Information</h2>
+
+        <form>
+            <fieldset>
+
+                <legend style="color:#000; background-color: green;">User Registration</legend>
+
+                <label for="name">Your Name :</label>
+                <span style=" color:red">*</span>
+                <input id="name" type="text" placeholder="Tyep your name"><br> <br>
+        
+                <label for="email">Your Email :</label>
+                <span style="color:red">*</span>
+                <input type="email" id="email" placeholder="Type your email"><br><br>
+        
+                <label for="number">Your Phone :</label>
+                <input type="number" id="number" placeholder="+880"><br><br>
+        
+                <label for="password">Your Password :</label>
+                <input type="password" id="password" placeholder="password"><br><br>
+        
+                <label for="distric">Choose Distric :</label>
+                <select name="" id="distric">
+                    <option value="">--Select the Distric--</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Khulna</option>
+                    <option value="">Jamalpur</option>
+                    <option value="">Faridpur</option>Dhaka
+                </select> <br><br>
+        
+                <label for="gender">Gender :</label>
+                <select id="gender">
+                    <option value="">--gender--</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Other</option>
+                </select><br><br>
+        
+                <label>Gender:</label>
+                <input id="male" type="radio" name="gender">
+                <label for="male">Male</label> 
+                <input id="female" type="radio" name="gender">
+                <label for="female">Female</label>
+                <input id="others" type="radio" name="gender">
+                <label for="others">Others</label> <br><br>
+        
+                <label for="date">Date of Birth :</label>
+                <input type="date" id="date"> <br><br>
+        
+                <label for="img">Upload Image :</label>
+                <input type="file" id="img" accept="img/*" multiple><br><br>
+        
+                <label for="message">Your Message:</label>
+                <textarea name="#" placeholder="Hello..." id="message" cols="30" row="5"></textarea><br><br>
+        
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox"> Agree to terms & conditions</label>
+                <span style="color: red;">*</span> <br><br>
+        
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </fieldset>
+        
+    </form>
+
+    </div>
+</body>
+
+</html>

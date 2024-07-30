@@ -296,10 +296,6 @@ li {
 
 }
 
-.Find-Best-card {
-    border: 2px solid orange;
-}
-
 .Find-Best-card img:first-child {
     /* border: 1px solid rgb(0, 255, 21); */
     object-fit: cover;

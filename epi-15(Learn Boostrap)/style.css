@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: "Work Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stars i {
+    color: red;
+    font-size: 24px;
+}
+
+div#carouselExampleDark {
+    background-color: #ecf0f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 30px;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+
+.carousel-indicators button {
+    background-color: red !important;
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 100%;
+    border: none;
+    margin: 0 2px;
+}
+
+i.bi.bi-arrow-left-circle {
+    color: red;
+    font-size: 40px;
+}
+
+i.bi.bi-arrow-right-circle {
+    color: red;
+    font-size: 40px;
+}

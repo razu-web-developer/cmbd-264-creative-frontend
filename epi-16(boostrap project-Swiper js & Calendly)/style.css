@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --font-family: "Instrument Sans", sans-serif;
+    --dark-color: #14151C;
+    --primary-color: #E0F014;
+    --text-color: #ffffff;
+    --border-color: #272933;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-color);
+}
+
+.accepting-heading p {
+    text-align: center;
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 0;
+    transition-duration: 0.5s;
+}
+
+.accepting-heading p:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    background-color: white !important;
+}
+
+.nab_button {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    box-shadow: none;
+    border: 1px solid white;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.nab_button:hover{
+    background-color: var(--text-color);
+    color: var(--dark-color);
+}
+
+.navbar {
+    border: 1px solid var(--border-color);
+}
+
+/* hero section stated */
+
+.hero-section{
+    margin: 50px auto;
+}
+
+.hero-title{
+    font-size: 14px;
+    font-weight:500;
+    line-height: 17px;
+    border-bottom: 2px solid var(--text-color);
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.hero-brand-title{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 66px;
+    margin: 25px auto;
+    width: 800px;
+}
+
+.hero-brand-description{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin: 0 auto 25px auto;
+    width: 580px;
+}
+
+.hero-button{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.hero-button:hover{
+    background-color: var(--text-color);
+    transition-duration: 0.5s;
+}

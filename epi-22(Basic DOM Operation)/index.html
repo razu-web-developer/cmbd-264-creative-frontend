@@ -11,23 +11,51 @@
 <body>
   <h1 id="text" class="text-3xl text-center mt-5 font-bold underline">Basic DOM OPeration</h1>
 
-  <div id="box"></div>
+
+  <div class="text-center bg-slate-500 p-10 w-96 mx-auto mt-10">
+    <h2 class="text-2xl">Let's Calculate🧮</h2>
+    <input id="input-1" class="bg-lime-500 text-white p-3 rounded-lg placeholder-white my-2" type="number" value=""
+      placeholder="type you number">
+
+    <input id="input-2" class="bg-lime-500 text-white p-3 rounded-lg placeholder-white" type="number" value=""
+      placeholder="type you number">
+
+    <div class="mt-2  flex flex-col gap-1">
+      <button onclick="calculate()" class="text-2xl block bg-orange-400 mx-auto px-14 -56 h-10  rounded-lg ">Addition +</button>
+      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">subtraction-</button>
+      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">Mutiplicatiox</button>
+      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">division÷ </button>
+    </div>
+
+    <h2 id="result" class="text-2xl mt-2">Result:</h2>
+  </div>
+
   <script>
     // const heading = (document.getElementById("text").innerText = "Hello, we are learning Javascript!");
     const heading = document.getElementById('text')
     heading.style.backgroundColor = 'red'
-    console.log(heading)
-    const boxLayout = `
-      <div class = "w-[400px]">
-        <h1 clas='text-3xl'>Life is a beautiful </h1>
-      </div>
-    `
-    
 
-    const box = (document.getElementById("box").innerHTML = boxLayout);
-   
-    
+    const input1 = document.getElementById("input-1");
+    const input2 = document.getElementById("input-2");
+    const result = document.getElementById("result");
 
+
+    // result.innerHTML = "Result: " + addition
+    // result.innerHTML = `Result: ${addition}`;
+
+    function calculate() {
+      if (input1.value !== "" && input2.value !== "") {
+
+        const addition = parseInt(input1.value) + parseInt(input2.value);
+        console.log(addition)
+        result.innerHTML = `Result: ${addition}`;
+
+      } else {
+        alert("Please insert value");
+        input1.value = "";
+        input2.value = "";
+      }
+    }
   </script>
 </body>
 

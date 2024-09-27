@@ -21,10 +21,14 @@
       placeholder="type you number">
 
     <div class="mt-2  flex flex-col gap-1">
-      <button onclick="calculate()" class="text-2xl block bg-orange-400 mx-auto px-14 -56 h-10  rounded-lg ">Addition +</button>
-      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">subtraction-</button>
-      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">Mutiplicatiox</button>
-      <button onclick="calculate()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">division÷ </button>
+      <button onclick="Addition()" class="text-2xl block bg-orange-400 mx-auto px-14 -56 h-10  rounded-lg ">Addition
+        +</button>
+      <button onclick="Subtraction()"
+        class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">Subtraction-</button>
+      <button onclick="Mutiplication()"
+        class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">Mutiplicatiox</button>
+      <button onclick="Division()" class="text-2xl block bg-orange-400 w-56 h-10 mx-auto px-14 rounded-lg ">Division÷
+      </button>
     </div>
 
     <h2 id="result" class="text-2xl mt-2">Result:</h2>
@@ -43,13 +47,58 @@
     // result.innerHTML = "Result: " + addition
     // result.innerHTML = `Result: ${addition}`;
 
-    function calculate() {
+    function Addition() {
       if (input1.value !== "" && input2.value !== "") {
 
         const addition = parseInt(input1.value) + parseInt(input2.value);
         console.log(addition)
-        result.innerHTML = `Result: ${addition}`;
+        result.innerHTML = `Addition: ${addition}`;
+        input1.value = "";
+        input2.value = "";
 
+      } else {
+        alert("Please insert value");
+        input1.value = "";
+        input2.value = "";
+      }
+    }
+
+    function Subtraction() {
+      if (input1.value !== "" && input2.value !== "") {
+        const addition = parseInt(input1.value) - parseInt(input2.value);
+        console.log(addition)
+        result.innerHTML = `Subtraction: ${addition}`;
+        input1.value = "";
+        input2.value = "";
+      } else {
+        alert("Please insert value");
+        input1.value = "";
+        input2.value = "";
+      }
+    }
+
+    function Mutiplication() {
+      if (input1.value !== "" && input2.value !== "") {
+
+        const addition = parseInt(input1.value) * parseInt(input2.value);
+        console.log(addition)
+        result.innerHTML = `Mutiplication: ${addition}`;
+        input1.value = "";
+        input2.value = "";
+      } else {
+        alert("Please insert value");
+        input1.value = "";
+        input2.value = "";
+      }
+    }
+    function Division() {
+      if (input1.value !== "" && input2.value !== "") {
+
+        const addition = parseInt(input1.value) / parseInt(input2.value);
+        console.log(addition)
+        result.innerHTML = `Division: ${addition}`;
+        input1.value = "";
+        input2.value = "";
       } else {
         alert("Please insert value");
         input1.value = "";
